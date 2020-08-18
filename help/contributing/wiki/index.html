@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Contributing to the wiki - PixelExperience Wiki">
+    <meta property="og:title" content="Contributing to the wiki - PixelExperience Wiki">
+    <meta property="og:description" content="Contributing to the wiki - PixelExperience Wiki">
+    <meta property="og:site_name" content="Contributing to the wiki - PixelExperience Wiki">
+    <meta property="og:image" content="https://download.pixelexperience.org/images/banner.png" />
+    <meta name="keywords" content="wiki,wiki pe,pixel experience,pixel,experience,oreo,google,google pixel,android 10,android q,pie,aosp,ten,android,custom rom,rom">
+    <meta name="msapplication-TileColor" content="#2D2D2D">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2D2D2D">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Contributing to the wiki - PixelExperience Wiki</title>
+
+    <link href="/assets/css/material-kit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:350,400,500,700|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js" integrity="sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-white mb-0 rounded-0">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand font-weight-bold" href="/"><img src="/images/logo.png" alt="PixelExperience"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/devices/" class="nav-link">Devices</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/contributing/" class="nav-link">Contribute</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/developer-information/" class="nav-link">Maintainers</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://download.pixelexperience.org" class="nav-link">
+              <i class="material-icons">open_in_new</i>
+              Website
+            </a>
+          </li>
+        </ul>
+
+        <form class="form-inline ml-auto" autocomplete="off">
+          <div class="form-group no-border">
+            <i class="material-icons">search</i>
+            <input id="search-input" type="text" class="form-control" placeholder="Search">
+          </div>
+
+          <ul id="results-container"></ul>
+
+
+          <script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              SimpleJekyllSearch.init({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('results-container'),
+                  dataSource: '/search.json',
+                  searchResultTemplate: '<li><a href="{url}" title="Contributing to the wiki">{title}</a></li>',
+                  noResultsText: '<li><a href="#">No results found.</a></li>',
+                  limit: 10,
+                  fuzzy: true,
+              })
+          </script>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="main-content">
+
+      <div class="container page">
+
+  <h1>Contributing to the wiki</h1>
+
+  
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+<p>So, you’ve decided you want to edit the wiki. Awesome! This page will show you how to get started. Please follow the instructions that are most appropriate for you.</p>
+
+<h2 id="cloning-the-wiki">Cloning the wiki</h2>
+
+<h4 id="install-git">Install Git</h4>
+
+<h5 id="on-windows">On Windows</h5>
+
+<p>Install <a href="https://git-for-windows.github.io/">Git for Windows</a>.</p>
+
+<h5 id="on-macos">On macOS</h5>
+
+<p>Install Git using the <a href="https://git-scm.com/download/mac">Git installer</a>.</p>
+
+<h5 id="on-linux">On Linux</h5>
+
+<p>You can install Git by running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
+
+<p>More specific instructions for different distributions can be found <a href="https://git-scm.com/download/linux">here</a>.</p>
+
+<h4 id="configure-git">Configure Git</h4>
+
+<p>Run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+</code></pre></div></div>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> Before this step, you can fork the PixelExperience wiki repository and work on your own copy. That way you can preview your changes online using GitHub pages, which <a href="#preview-using-github">we’ve detailed below</a>. Just fork the repo and then replace PixelExperience in the <code class="highlighter-rouge">git clone</code> command with your GitHub username.</div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/PixelExperience/wiki ~/wiki
+cd ~/wiki
+</code></pre></div></div>
+
+<h2 id="making-and-previewing-changes">Making and previewing changes</h2>
+
+<p>You can now make changes in this folder using your favorite text editor. If you ever need to reset your folder to a known-good state, erasing your changes, just run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reset --hard HEAD
+</code></pre></div></div>
+
+<h3 id="preview-using-github">Preview using GitHub</h3>
+
+<p>This is probably the easiest method, but requires you to have forked the wiki repository, and have cloned from that.</p>
+
+<h4 id="commit-and-preview-your-changes">Commit and preview your changes</h4>
+
+<p>Run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit
+</code></pre></div></div>
+
+<p>An editor will pop up. In the first line, type a short (below 80 character) description of your changes,
+then put a blank line, and, if you want, a more detailed description of your changes. For example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Add the contributing page
+
+The contributing page will show people how they can edit our wiki, which
+is important, since it wouldn't be much of a wiki without editors.
+</code></pre></div></div>
+<p>Save the file and exit the editor. Now upload your changes to GitHub:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin
+</code></pre></div></div>
+
+<p>Preview your changes - you can see your fork of the wiki at <code class="highlighter-rouge">http://yourusername.github.io/wiki</code>.</p>
+
+<h4 id="fixing-mistakes">Fixing mistakes</h4>
+
+<p>So, you’ve made your change, and you can look at the wiki on GitHub pages. But something’s wrong!
+You made a typo - or accidentally deleted something. Have no fear! You can fix it.</p>
+
+<p>First, fix the mistake(s) you made. Then, to push them to GitHub:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit --amend
+</code></pre></div></div>
+
+<p>Your commit message should show up in an editor. You can edit it, or just quit the editor.
+Finally, run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push --force origin
+</code></pre></div></div>
+
+<h3 id="preview-locally-using-docker">Preview locally using docker</h3>
+
+<div class="alert alert-danger" role="alert"><div class="alert-icon"><i class="material-icons">warning</i></div><div class="alert-text"><b>Warning:</b> Docker requires a 64 bit OS. If you do not have a 64 bit OS, do not continue.</div></div>
+
+<h4 id="install-docker">Install docker</h4>
+
+<p>Add docker keyring and install the package:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt update
+sudo apt install docker-ce
+</code></pre></div></div>
+
+<p>Add your user account to the <em>docker</em> group in order to use docker commands without prefixing <code class="highlighter-rouge">sudo</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gpasswd -a $USER docker
+newgrp docker
+</code></pre></div></div>
+
+<p>Then log out of your user account and log back in or reboot to make the group membership changes take effect.</p>
+
+<h4 id="build-the-docker-image">Build the docker image</h4>
+
+<p>This builds the docker image, which should only need to be done once:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/wiki
+docker build -t pixelexperience/wiki .
+</code></pre></div></div>
+
+<h4 id="edit-the-wiki">Edit the wiki</h4>
+
+<p>Each time that you want to edit the wiki, you will need to start a local web server running Jekyll:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/wiki
+docker run -p 4000:4000 -v $(pwd):/src -it pixelexperience/wiki
+</code></pre></div></div>
+
+<p>At this point you should be able to view the <a href="http://127.0.0.1:4000">local Jekyll server</a>.</p>
+
+<h3 id="preview-locally-using-rvm-and-jekyll">Preview locally using rvm and jekyll</h3>
+
+<h4 id="install-rvm">Install <code class="highlighter-rouge">rvm</code></h4>
+
+<p><code class="highlighter-rouge">rvm</code> is a great tool to isolate different usages of ruby from each other. During this setup, you will install <code class="highlighter-rouge">ruby</code> and a set of ruby modules (gems) which will be isolated from any other ruby use on the machine (now and in the future).</p>
+
+<p>If you don’t have <code class="highlighter-rouge">rvm</code> already installed, go ahead and install it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+</code></pre></div></div>
+
+<h4 id="configure-ruby-for-editing-the-wiki">Configure <code class="highlighter-rouge">ruby</code> for editing the wiki</h4>
+
+<p>These steps will configure and install the latest version of ruby MRI via <code class="highlighter-rouge">rvm</code>. All gems (modules) are stored in the namespace <code class="highlighter-rouge">wiki</code> and the environment will be configured to allow remote access to GitHub. Once configured, <code class="highlighter-rouge">ruby</code> will be installed and the required gems downloaded:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/wiki
+echo ruby &gt; .ruby-version
+echo wiki &gt; .ruby-gemset
+rvm install ruby
+gem install bundler rails
+bundle install
+</code></pre></div></div>
+
+<h4 id="edit-the-wiki-1">Edit the wiki</h4>
+
+<p>Each time that you want to edit the wiki, you will need to start a local web server running Jekyll:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.rvm/scripts/rvm
+cd ~/wiki
+bundle exec jekyll serve --incremental
+</code></pre></div></div>
+
+<p>At this point you should be able to view the <a href="http://127.0.0.1:4000">local Jekyll server</a>.</p>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> The incremental flag will cause Jekyll to only reprocess each page as you change it (without the incremental flag, it would reprocess the entire site which takes 10-30+ seconds depending on your hardware). This works very well when editing meta pages but is a little annoying when editing the data/device/name.yml files. When editing those files you will need to save the data and then touch the <code class="highlighter-rouge">.md</code> file of the page that you are viewing in the browser. An easy way to do that is: <code class="highlighter-rouge">touch pages/*/&lt;devicename&gt;*</code></div></div>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> If you work on a remote server and trust the network on which you are connected, you can add <code class="highlighter-rouge">--host &lt;fully-qualified hostname&gt;</code> to the Jekyll command line to allow remote connections to the server.</div></div>
+
+<h2 id="uploading-your-changes">Uploading your changes</h2>
+
+<p>You need to open a pull request at <a href="https://github.com/PixelExperience/wiki/">Github</a> to review proposed changes.</p>
+
+
+</div>
+
+
+    </div>
+
+    <footer class="footer mt-5 px-2 py-4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center text-md-left">
+        <p class="text-muted my-0"><b>&copy; 2018 - 2020 The PixelExperience Project</b></p>
+      </div>
+      <div class="col-md">
+        <p class="text-center text-md-right text-muted">Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.<br />
+         Site last generated: Aug 18, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>anchors.add().remove('h1');</script>
+
+  </body>
+</html>

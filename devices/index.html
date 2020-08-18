@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Devices - PixelExperience Wiki">
+    <meta property="og:title" content="Devices - PixelExperience Wiki">
+    <meta property="og:description" content="Devices - PixelExperience Wiki">
+    <meta property="og:site_name" content="Devices - PixelExperience Wiki">
+    <meta property="og:image" content="https://download.pixelexperience.org/images/banner.png" />
+    <meta name="keywords" content="wiki,wiki pe,pixel experience,pixel,experience,oreo,google,google pixel,android 10,android q,pie,aosp,ten,android,custom rom,rom">
+    <meta name="msapplication-TileColor" content="#2D2D2D">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2D2D2D">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Devices - PixelExperience Wiki</title>
+
+    <link href="/assets/css/material-kit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:350,400,500,700|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js" integrity="sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-white mb-0 rounded-0">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand font-weight-bold" href="/"><img src="/images/logo.png" alt="PixelExperience"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/devices/" class="nav-link">Devices</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/contributing/" class="nav-link">Contribute</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/developer-information/" class="nav-link">Maintainers</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://download.pixelexperience.org" class="nav-link">
+              <i class="material-icons">open_in_new</i>
+              Website
+            </a>
+          </li>
+        </ul>
+
+        <form class="form-inline ml-auto" autocomplete="off">
+          <div class="form-group no-border">
+            <i class="material-icons">search</i>
+            <input id="search-input" type="text" class="form-control" placeholder="Search">
+          </div>
+
+          <ul id="results-container"></ul>
+
+
+          <script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              SimpleJekyllSearch.init({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('results-container'),
+                  dataSource: '/search.json',
+                  searchResultTemplate: '<li><a href="{url}" title="Devices">{title}</a></li>',
+                  noResultsText: '<li><a href="#">No results found.</a></li>',
+                  limit: 10,
+                  fuzzy: true,
+              })
+          </script>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="main-content">
+
+      <script type="text/javascript">
+function toggleDiscontinued()
+{
+  $('.discontinued').toggle();
+  $("table.device").each(function () {
+    vendor = $(this).attr("vendor");
+    if ($(this).find("tbody > tr:visible").length == 0 && $(this).is(":visible")) {
+      $("*[vendor=" + vendor + "]").hide();
+    } else {
+      $("*[vendor=" + vendor + "]").show();
+    }
+  });
+}
+</script>
+
+<div class="container page">
+
+  <h1>Devices</h1>
+
+  Rows with a lower opacity are no longer officially supported and the pages exist for reference only.<br/>
+  You can hide them by unchecking the following checkbox:<br/><br/>
+
+
+
+
+
+
+
+<div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" onclick="toggleDiscontinued()" checked="checked">Show discontinued devices<span class="form-check-sign">
+        <span class="check"></span>
+    </span>
+  </label>
+</div><br/><br/>
+
+Select a vendor to jump to:<br/>
+
+<div class="vendor-container">
+  <div vendor="asus"><a href="#asus" vendor="asus">Asus</a></div>
+  <div vendor="google"><a href="#google" vendor="google">Google</a></div>
+  <div vendor="leeco"><a href="#leeco" vendor="leeco">LeEco</a></div>
+  <div vendor="lenovo"><a href="#lenovo" vendor="lenovo">Lenovo</a></div>
+  <div vendor="motorola"><a href="#motorola" vendor="motorola">Motorola</a></div>
+  <div vendor="oneplus"><a href="#oneplus" vendor="oneplus">OnePlus</a></div>
+  <div vendor="realme"><a href="#realme" vendor="realme">Realme</a></div>
+  <div vendor="samsung"><a href="#samsung" vendor="samsung">Samsung</a></div>
+  <div vendor="xiaomi"><a href="#xiaomi" vendor="xiaomi">Xiaomi</a></div>
+  <div vendor="zuk"><a href="#zuk" vendor="zuk">ZUK</a></div>
+</div>
+
+
+
+
+
+<h2 class="h3" id="asus" vendor="asus">Asus</h2>
+
+<table class="table device" vendor="asus">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/X00P'"><a href="/devices/X00P">Zenfone Max M1</a></th>
+    <td onClick="location.href='/devices/X00P'"><a href="/devices/X00P">X00P</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/X00TD'"><a href="/devices/X00TD">Zenfone Max Pro M1</a></th>
+    <td onClick="location.href='/devices/X00TD'"><a href="/devices/X00TD">X00TD</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/X01BD'"><a href="/devices/X01BD">Zenfone Max Pro M2</a></th>
+    <td onClick="location.href='/devices/X01BD'"><a href="/devices/X01BD">X01BD</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="google" vendor="google">Google</h2>
+
+<table class="table device" vendor="google">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/bullhead'"><a href="/devices/bullhead">Nexus 5X</a></th>
+    <td onClick="location.href='/devices/bullhead'"><a href="/devices/bullhead">bullhead</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/sailfish'"><a href="/devices/sailfish">Pixel</a></th>
+    <td onClick="location.href='/devices/sailfish'"><a href="/devices/sailfish">sailfish</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/marlin'"><a href="/devices/marlin">Pixel XL</a></th>
+    <td onClick="location.href='/devices/marlin'"><a href="/devices/marlin">marlin</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="leeco" vendor="leeco">LeEco</h2>
+
+<table class="table device" vendor="leeco">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/s2'"><a href="/devices/s2">Le 2</a></th>
+    <td onClick="location.href='/devices/s2'"><a href="/devices/s2">s2</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="lenovo" vendor="lenovo">Lenovo</h2>
+
+<table class="table device" vendor="lenovo">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/kunlun2'"><a href="/devices/kunlun2">Z6 Lite</a></th>
+    <td onClick="location.href='/devices/kunlun2'"><a href="/devices/kunlun2">kunlun2</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="motorola" vendor="motorola">Motorola</h2>
+
+<table class="table device" vendor="motorola">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/potter'"><a href="/devices/potter">Moto G5 Plus</a></th>
+    <td onClick="location.href='/devices/potter'"><a href="/devices/potter">potter</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/montana'"><a href="/devices/montana">Moto G5S</a></th>
+    <td onClick="location.href='/devices/montana'"><a href="/devices/montana">montana</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/sanders'"><a href="/devices/sanders">Moto G5S Plus</a></th>
+    <td onClick="location.href='/devices/sanders'"><a href="/devices/sanders">sanders</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/evert'"><a href="/devices/evert">Moto G6 Plus</a></th>
+    <td onClick="location.href='/devices/evert'"><a href="/devices/evert">evert</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/lake'"><a href="/devices/lake">Moto G7 Plus</a></th>
+    <td onClick="location.href='/devices/lake'"><a href="/devices/lake">lake</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/chef'"><a href="/devices/chef">Moto One Power</a></th>
+    <td onClick="location.href='/devices/chef'"><a href="/devices/chef">chef</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/payton'"><a href="/devices/payton">Moto X4</a></th>
+    <td onClick="location.href='/devices/payton'"><a href="/devices/payton">payton</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="oneplus" vendor="oneplus">OnePlus</h2>
+
+<table class="table device" vendor="oneplus">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/oneplus2'"><a href="/devices/oneplus2">OnePlus 2</a></th>
+    <td onClick="location.href='/devices/oneplus2'"><a href="/devices/oneplus2">oneplus2</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/oneplus3'"><a href="/devices/oneplus3">OnePlus 3 / 3T</a></th>
+    <td onClick="location.href='/devices/oneplus3'"><a href="/devices/oneplus3">oneplus3</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/cheeseburger'"><a href="/devices/cheeseburger">OnePlus 5</a></th>
+    <td onClick="location.href='/devices/cheeseburger'"><a href="/devices/cheeseburger">cheeseburger</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/dumpling'"><a href="/devices/dumpling">OnePlus 5T</a></th>
+    <td onClick="location.href='/devices/dumpling'"><a href="/devices/dumpling">dumpling</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/enchilada'"><a href="/devices/enchilada">OnePlus 6</a></th>
+    <td onClick="location.href='/devices/enchilada'"><a href="/devices/enchilada">enchilada</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/fajita'"><a href="/devices/fajita">OnePlus 6T</a></th>
+    <td onClick="location.href='/devices/fajita'"><a href="/devices/fajita">fajita</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/guacamoleb'"><a href="/devices/guacamoleb">OnePlus 7</a></th>
+    <td onClick="location.href='/devices/guacamoleb'"><a href="/devices/guacamoleb">guacamoleb</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/guacamole'"><a href="/devices/guacamole">OnePlus 7 Pro</a></th>
+    <td onClick="location.href='/devices/guacamole'"><a href="/devices/guacamole">guacamole</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/avicii'"><a href="/devices/avicii">OnePlus Nord</a></th>
+    <td onClick="location.href='/devices/avicii'"><a href="/devices/avicii">avicii</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="realme" vendor="realme">Realme</h2>
+
+<table class="table device" vendor="realme">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/RMX1851'"><a href="/devices/RMX1851">3 Pro</a></th>
+    <td onClick="location.href='/devices/RMX1851'"><a href="/devices/RMX1851">RMX1851</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/RMX1971'"><a href="/devices/RMX1971">5 Pro</a></th>
+    <td onClick="location.href='/devices/RMX1971'"><a href="/devices/RMX1971">RMX1971</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="samsung" vendor="samsung">Samsung</h2>
+
+<table class="table device" vendor="samsung">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/herolte'"><a href="/devices/herolte">Galaxy S7</a></th>
+    <td onClick="location.href='/devices/herolte'"><a href="/devices/herolte">herolte</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/hero2lte'"><a href="/devices/hero2lte">Galaxy S7 Edge</a></th>
+    <td onClick="location.href='/devices/hero2lte'"><a href="/devices/hero2lte">hero2lte</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="xiaomi" vendor="xiaomi">Xiaomi</h2>
+
+<table class="table device" vendor="xiaomi">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/gemini'"><a href="/devices/gemini">Mi 5</a></th>
+    <td onClick="location.href='/devices/gemini'"><a href="/devices/gemini">gemini</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/capricorn'"><a href="/devices/capricorn">Mi 5s</a></th>
+    <td onClick="location.href='/devices/capricorn'"><a href="/devices/capricorn">capricorn</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/natrium'"><a href="/devices/natrium">Mi 5s Plus</a></th>
+    <td onClick="location.href='/devices/natrium'"><a href="/devices/natrium">natrium</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/wayne'"><a href="/devices/wayne">Mi 6X</a></th>
+    <td onClick="location.href='/devices/wayne'"><a href="/devices/wayne">wayne</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/dipper'"><a href="/devices/dipper">Mi 8</a></th>
+    <td onClick="location.href='/devices/dipper'"><a href="/devices/dipper">dipper</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/platina'"><a href="/devices/platina">Mi 8 Lite</a></th>
+    <td onClick="location.href='/devices/platina'"><a href="/devices/platina">platina</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/cepheus'"><a href="/devices/cepheus">Mi 9</a></th>
+    <td onClick="location.href='/devices/cepheus'"><a href="/devices/cepheus">cepheus</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/grus'"><a href="/devices/grus">Mi 9 SE</a></th>
+    <td onClick="location.href='/devices/grus'"><a href="/devices/grus">grus</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/tissot'"><a href="/devices/tissot">Mi A1</a></th>
+    <td onClick="location.href='/devices/tissot'"><a href="/devices/tissot">tissot</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/jasmine_sprout'"><a href="/devices/jasmine_sprout">Mi A2</a></th>
+    <td onClick="location.href='/devices/jasmine_sprout'"><a href="/devices/jasmine_sprout">jasmine_sprout</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/daisy'"><a href="/devices/daisy">Mi A2 Lite</a></th>
+    <td onClick="location.href='/devices/daisy'"><a href="/devices/daisy">daisy</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/laurel_sprout'"><a href="/devices/laurel_sprout">Mi A3</a></th>
+    <td onClick="location.href='/devices/laurel_sprout'"><a href="/devices/laurel_sprout">laurel_sprout</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/lithium'"><a href="/devices/lithium">Mi MIX</a></th>
+    <td onClick="location.href='/devices/lithium'"><a href="/devices/lithium">lithium</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/chiron'"><a href="/devices/chiron">Mi MIX 2</a></th>
+    <td onClick="location.href='/devices/chiron'"><a href="/devices/chiron">chiron</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/polaris'"><a href="/devices/polaris">Mi MIX 2S</a></th>
+    <td onClick="location.href='/devices/polaris'"><a href="/devices/polaris">polaris</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/andromeda'"><a href="/devices/andromeda">Mi Mix 3 5G</a></th>
+    <td onClick="location.href='/devices/andromeda'"><a href="/devices/andromeda">andromeda</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/scorpio'"><a href="/devices/scorpio">Mi Note 2</a></th>
+    <td onClick="location.href='/devices/scorpio'"><a href="/devices/scorpio">scorpio</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/beryllium'"><a href="/devices/beryllium">Poco F1</a></th>
+    <td onClick="location.href='/devices/beryllium'"><a href="/devices/beryllium">beryllium</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/phoenix'"><a href="/devices/phoenix">Poco X2/Redmi K30</a></th>
+    <td onClick="location.href='/devices/phoenix'"><a href="/devices/phoenix">phoenix</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/land'"><a href="/devices/land">Redmi 3S/3X</a></th>
+    <td onClick="location.href='/devices/land'"><a href="/devices/land">land</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/santoni'"><a href="/devices/santoni">Redmi 4(X)</a></th>
+    <td onClick="location.href='/devices/santoni'"><a href="/devices/santoni">santoni</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/rosy'"><a href="/devices/rosy">Redmi 5</a></th>
+    <td onClick="location.href='/devices/rosy'"><a href="/devices/rosy">rosy</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/riva'"><a href="/devices/riva">Redmi 5A</a></th>
+    <td onClick="location.href='/devices/riva'"><a href="/devices/riva">riva</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/sakura'"><a href="/devices/sakura">Redmi 6 Pro</a></th>
+    <td onClick="location.href='/devices/sakura'"><a href="/devices/sakura">sakura</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/davinci'"><a href="/devices/davinci">Redmi K20 / Mi 9T</a></th>
+    <td onClick="location.href='/devices/davinci'"><a href="/devices/davinci">davinci</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/raphael'"><a href="/devices/raphael">Redmi K20 Pro / Mi 9T Pro</a></th>
+    <td onClick="location.href='/devices/raphael'"><a href="/devices/raphael">raphael</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/kenzo'"><a href="/devices/kenzo">Redmi Note 3 Pro</a></th>
+    <td onClick="location.href='/devices/kenzo'"><a href="/devices/kenzo">kenzo</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/mido'"><a href="/devices/mido">Redmi Note 4</a></th>
+    <td onClick="location.href='/devices/mido'"><a href="/devices/mido">mido</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/whyred'"><a href="/devices/whyred">Redmi Note 5 Pro</a></th>
+    <td onClick="location.href='/devices/whyred'"><a href="/devices/whyred">whyred</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/vince'"><a href="/devices/vince">Redmi Note 5/Plus</a></th>
+    <td onClick="location.href='/devices/vince'"><a href="/devices/vince">vince</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/lavender'"><a href="/devices/lavender">Redmi Note 7</a></th>
+    <td onClick="location.href='/devices/lavender'"><a href="/devices/lavender">lavender</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/violet'"><a href="/devices/violet">Redmi Note 7 Pro</a></th>
+    <td onClick="location.href='/devices/violet'"><a href="/devices/violet">violet</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/ginkgo'"><a href="/devices/ginkgo">Redmi Note 8</a></th>
+    <td onClick="location.href='/devices/ginkgo'"><a href="/devices/ginkgo">ginkgo</a></td>
+  </tr>
+
+
+
+
+
+  <tr class="">
+    <th scope="row" onClick="location.href='/devices/curtana'"><a href="/devices/curtana">Redmi Note 9S</a></th>
+    <td onClick="location.href='/devices/curtana'"><a href="/devices/curtana">curtana</a></td>
+  </tr>
+</table>
+
+
+
+
+<h2 class="h3" id="zuk" vendor="zuk">ZUK</h2>
+
+<table class="table device" vendor="zuk">
+  <thead>
+  <tr>
+    <th scope="col" class="first"><b>Device</b></th>
+    <th scope="col"><b>Codename</b></th>
+  </tr>
+  </thead>
+
+
+
+  <tr class="discontinued">
+    <th scope="row" onClick="location.href='/devices/ham'"><a href="/devices/ham">Z1</a></th>
+    <td onClick="location.href='/devices/ham'"><a href="/devices/ham">ham</a></td>
+  </tr>
+</table>
+
+</div>
+
+
+    </div>
+
+    <footer class="footer mt-5 px-2 py-4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center text-md-left">
+        <p class="text-muted my-0"><b>&copy; 2018 - 2020 The PixelExperience Project</b></p>
+      </div>
+      <div class="col-md">
+        <p class="text-center text-md-right text-muted">Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.<br />
+         Site last generated: Aug 18, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>anchors.add().remove('h1');</script>
+
+  </body>
+</html>

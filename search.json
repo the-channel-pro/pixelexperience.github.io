@@ -1,0 +1,721 @@
+[
+
+{
+"title": "RMX1851 - Realme 3 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/RMX1851/",
+"summary": ""
+}
+,
+
+{
+"title": "RMX1971 - Realme 5 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/RMX1971/",
+"summary": ""
+}
+,
+
+{
+"title": "X00P - Asus Zenfone Max M1",
+"tags": "",
+"keywords": "",
+"url": "/devices/X00P/",
+"summary": ""
+}
+,
+
+{
+"title": "X00TD - Asus Zenfone Max Pro M1",
+"tags": "",
+"keywords": "",
+"url": "/devices/X00TD/",
+"summary": ""
+}
+,
+
+{
+"title": "X01BD - Asus Zenfone Max Pro M2",
+"tags": "",
+"keywords": "",
+"url": "/devices/X01BD/",
+"summary": ""
+}
+,
+
+{
+"title": "andromeda - Xiaomi Mi Mix 3 5G",
+"tags": "",
+"keywords": "",
+"url": "/devices/andromeda/",
+"summary": ""
+}
+,
+
+{
+"title": "avicii - OnePlus Nord",
+"tags": "",
+"keywords": "",
+"url": "/devices/avicii/",
+"summary": ""
+}
+,
+
+{
+"title": "beryllium - Xiaomi Poco F1",
+"tags": "",
+"keywords": "",
+"url": "/devices/beryllium/",
+"summary": ""
+}
+,
+
+{
+"title": "How to submit a bug report",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/bugreport/",
+"summary": ""
+}
+,
+
+{
+"title": "Build guides",
+"tags": "",
+"keywords": "",
+"url": "/help/building/",
+"summary": ""
+}
+,
+
+{
+"title": "bullhead - Google Nexus 5X",
+"tags": "",
+"keywords": "",
+"url": "/devices/bullhead/",
+"summary": ""
+}
+,
+
+{
+"title": "capricorn - Xiaomi Mi 5s",
+"tags": "",
+"keywords": "",
+"url": "/devices/capricorn/",
+"summary": ""
+}
+,
+
+{
+"title": "cepheus - Xiaomi Mi 9",
+"tags": "",
+"keywords": "",
+"url": "/devices/cepheus/",
+"summary": ""
+}
+,
+
+{
+"title": "cheeseburger - OnePlus 5",
+"tags": "",
+"keywords": "",
+"url": "/devices/cheeseburger/",
+"summary": ""
+}
+,
+
+{
+"title": "chef - Motorola Moto One Power",
+"tags": "",
+"keywords": "",
+"url": "/devices/chef/",
+"summary": ""
+}
+,
+
+{
+"title": "chiron - Xiaomi Mi MIX 2",
+"tags": "",
+"keywords": "",
+"url": "/devices/chiron/",
+"summary": ""
+}
+,
+
+{
+"title": "Contributing",
+"tags": "",
+"keywords": "",
+"url": "/help/contributing/",
+"summary": ""
+}
+,
+
+{
+"title": "Contributing to the wiki",
+"tags": "",
+"keywords": "",
+"url": "/help/contributing/wiki/",
+"summary": ""
+}
+,
+
+{
+"title": "curtana - Xiaomi Redmi Note 9S",
+"tags": "",
+"keywords": "",
+"url": "/devices/curtana/",
+"summary": ""
+}
+,
+
+{
+"title": "daisy - Xiaomi Mi A2 Lite",
+"tags": "",
+"keywords": "",
+"url": "/devices/daisy/",
+"summary": ""
+}
+,
+
+{
+"title": "davinci - Xiaomi Redmi K20 / Mi 9T",
+"tags": "",
+"keywords": "",
+"url": "/devices/davinci/",
+"summary": ""
+}
+,
+
+{
+"title": "Information for maintainers",
+"tags": "",
+"keywords": "",
+"url": "/help/developer-information/",
+"summary": ""
+}
+,
+
+{
+"title": "Requesting PixelExperience for your device",
+"tags": "",
+"keywords": "",
+"url": "/help/device-requests/",
+"summary": ""
+}
+,
+
+{
+"title": "dipper - Xiaomi Mi 8",
+"tags": "",
+"keywords": "",
+"url": "/devices/dipper/",
+"summary": ""
+}
+,
+
+{
+"title": "dumpling - OnePlus 5T",
+"tags": "",
+"keywords": "",
+"url": "/devices/dumpling/",
+"summary": ""
+}
+,
+
+{
+"title": "enchilada - OnePlus 6",
+"tags": "",
+"keywords": "",
+"url": "/devices/enchilada/",
+"summary": ""
+}
+,
+
+{
+"title": "evert - Motorola Moto G6 Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/evert/",
+"summary": ""
+}
+,
+
+{
+"title": "fajita - OnePlus 6T",
+"tags": "",
+"keywords": "",
+"url": "/devices/fajita/",
+"summary": ""
+}
+,
+
+{
+"title": "Frequently Asked Questions",
+"tags": "",
+"keywords": "",
+"url": "/help/faq/",
+"summary": ""
+}
+,
+
+{
+"title": "Using ADB and fastboot",
+"tags": "",
+"keywords": "",
+"url": "/help/adb-fastboot-guide/",
+"summary": ""
+}
+,
+
+{
+"title": "gemini - Xiaomi Mi 5",
+"tags": "",
+"keywords": "",
+"url": "/devices/gemini/",
+"summary": ""
+}
+,
+
+{
+"title": "ginkgo - Xiaomi Redmi Note 8",
+"tags": "",
+"keywords": "",
+"url": "/devices/ginkgo/",
+"summary": ""
+}
+,
+
+{
+"title": "grus - Xiaomi Mi 9 SE",
+"tags": "",
+"keywords": "",
+"url": "/devices/grus/",
+"summary": ""
+}
+,
+
+{
+"title": "guacamole - OnePlus 7 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/guacamole/",
+"summary": ""
+}
+,
+
+{
+"title": "guacamoleb - OnePlus 7",
+"tags": "",
+"keywords": "",
+"url": "/devices/guacamoleb/",
+"summary": ""
+}
+,
+
+{
+"title": "ham - ZUK Z1",
+"tags": "",
+"keywords": "",
+"url": "/devices/ham/",
+"summary": ""
+}
+,
+
+{
+"title": "hero2lte - Samsung Galaxy S7 Edge",
+"tags": "",
+"keywords": "",
+"url": "/devices/hero2lte/",
+"summary": ""
+}
+,
+
+{
+"title": "herolte - Samsung Galaxy S7",
+"tags": "",
+"keywords": "",
+"url": "/devices/herolte/",
+"summary": ""
+}
+,
+
+{
+"title": "Guides",
+"tags": "",
+"keywords": "",
+"url": "/help/guides/",
+"summary": ""
+}
+,
+
+{
+"title": "How to import the sources to Android Studio / IntelliJ",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/import-android-studio/",
+"summary": ""
+}
+,
+
+{
+"title": "Install guides",
+"tags": "",
+"keywords": "",
+"url": "/help/install/",
+"summary": ""
+}
+,
+
+{
+"title": "jasmine_sprout - Xiaomi Mi A2",
+"tags": "",
+"keywords": "",
+"url": "/devices/jasmine_sprout/",
+"summary": ""
+}
+,
+
+{
+"title": "kenzo - Xiaomi Redmi Note 3 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/kenzo/",
+"summary": ""
+}
+,
+
+{
+"title": "kunlun2 - Lenovo Z6 Lite",
+"tags": "",
+"keywords": "",
+"url": "/devices/kunlun2/",
+"summary": ""
+}
+,
+
+{
+"title": "lake - Motorola Moto G7 Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/lake/",
+"summary": ""
+}
+,
+
+{
+"title": "land - Xiaomi Redmi 3S/3X",
+"tags": "",
+"keywords": "",
+"url": "/devices/land/",
+"summary": ""
+}
+,
+
+{
+"title": "laurel_sprout - Xiaomi Mi A3",
+"tags": "",
+"keywords": "",
+"url": "/devices/laurel_sprout/",
+"summary": ""
+}
+,
+
+{
+"title": "lavender - Xiaomi Redmi Note 7",
+"tags": "",
+"keywords": "",
+"url": "/devices/lavender/",
+"summary": ""
+}
+,
+
+{
+"title": "lithium - Xiaomi Mi MIX",
+"tags": "",
+"keywords": "",
+"url": "/devices/lithium/",
+"summary": ""
+}
+,
+
+{
+"title": "How to capture logs",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/logcat/",
+"summary": ""
+}
+,
+
+{
+"title": "marlin - Google Pixel XL",
+"tags": "",
+"keywords": "",
+"url": "/devices/marlin/",
+"summary": ""
+}
+,
+
+{
+"title": "mido - Xiaomi Redmi Note 4",
+"tags": "",
+"keywords": "",
+"url": "/devices/mido/",
+"summary": ""
+}
+,
+
+{
+"title": "montana - Motorola Moto G5S",
+"tags": "",
+"keywords": "",
+"url": "/devices/montana/",
+"summary": ""
+}
+,
+
+{
+"title": "natrium - Xiaomi Mi 5s Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/natrium/",
+"summary": ""
+}
+,
+
+{
+"title": "oneplus2 - OnePlus 2",
+"tags": "",
+"keywords": "",
+"url": "/devices/oneplus2/",
+"summary": ""
+}
+,
+
+{
+"title": "oneplus3 - OnePlus 3 / 3T",
+"tags": "",
+"keywords": "",
+"url": "/devices/oneplus3/",
+"summary": ""
+}
+,
+
+{
+"title": "All Content",
+"tags": "noindex",
+"keywords": "",
+"url": "/pages/",
+"summary": ""
+}
+,
+
+{
+"title": "payton - Motorola Moto X4",
+"tags": "",
+"keywords": "",
+"url": "/devices/payton/",
+"summary": ""
+}
+,
+
+{
+"title": "phoenix - Xiaomi Poco X2/Redmi K30",
+"tags": "",
+"keywords": "",
+"url": "/devices/phoenix/",
+"summary": ""
+}
+,
+
+{
+"title": "platina - Xiaomi Mi 8 Lite",
+"tags": "",
+"keywords": "",
+"url": "/devices/platina/",
+"summary": ""
+}
+,
+
+{
+"title": "polaris - Xiaomi Mi MIX 2S",
+"tags": "",
+"keywords": "",
+"url": "/devices/polaris/",
+"summary": ""
+}
+,
+
+{
+"title": "potter - Motorola Moto G5 Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/potter/",
+"summary": ""
+}
+,
+
+{
+"title": "raphael - Xiaomi Redmi K20 Pro / Mi 9T Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/raphael/",
+"summary": ""
+}
+,
+
+{
+"title": "riva - Xiaomi Redmi 5A",
+"tags": "",
+"keywords": "",
+"url": "/devices/riva/",
+"summary": ""
+}
+,
+
+{
+"title": "rosy - Xiaomi Redmi 5",
+"tags": "",
+"keywords": "",
+"url": "/devices/rosy/",
+"summary": ""
+}
+,
+
+{
+"title": "s2 - LeEco Le 2",
+"tags": "",
+"keywords": "",
+"url": "/devices/s2/",
+"summary": ""
+}
+,
+
+{
+"title": "sailfish - Google Pixel",
+"tags": "",
+"keywords": "",
+"url": "/devices/sailfish/",
+"summary": ""
+}
+,
+
+{
+"title": "sakura - Xiaomi Redmi 6 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/sakura/",
+"summary": ""
+}
+,
+
+{
+"title": "sanders - Motorola Moto G5S Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/sanders/",
+"summary": ""
+}
+,
+
+{
+"title": "santoni - Xiaomi Redmi 4(X)",
+"tags": "",
+"keywords": "",
+"url": "/devices/santoni/",
+"summary": ""
+}
+,
+
+{
+"title": "scorpio - Xiaomi Mi Note 2",
+"tags": "",
+"keywords": "",
+"url": "/devices/scorpio/",
+"summary": ""
+}
+,
+
+{
+"title": "How to submit a patch",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/submit-patch/",
+"summary": ""
+}
+,
+
+{
+"title": "tissot - Xiaomi Mi A1",
+"tags": "",
+"keywords": "",
+"url": "/devices/tissot/",
+"summary": ""
+}
+,
+
+{
+"title": "How to translate",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/translate/",
+"summary": ""
+}
+,
+
+{
+"title": "Upgrade guides",
+"tags": "",
+"keywords": "",
+"url": "/help/upgrade/",
+"summary": ""
+}
+,
+
+{
+"title": "How to use Gerrit",
+"tags": "how-to",
+"keywords": "",
+"url": "/help/using-gerrit/",
+"summary": ""
+}
+,
+
+{
+"title": "vince - Xiaomi Redmi Note 5/Plus",
+"tags": "",
+"keywords": "",
+"url": "/devices/vince/",
+"summary": ""
+}
+,
+
+{
+"title": "violet - Xiaomi Redmi Note 7 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/violet/",
+"summary": ""
+}
+,
+
+{
+"title": "wayne - Xiaomi Mi 6X",
+"tags": "",
+"keywords": "",
+"url": "/devices/wayne/",
+"summary": ""
+}
+,
+
+{
+"title": "whyred - Xiaomi Redmi Note 5 Pro",
+"tags": "",
+"keywords": "",
+"url": "/devices/whyred/",
+"summary": ""
+}
+]

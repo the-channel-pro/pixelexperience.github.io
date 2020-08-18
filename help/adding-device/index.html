@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="How to submit a new device for official builds - PixelExperience Wiki">
+    <meta property="og:title" content="How to submit a new device for official builds - PixelExperience Wiki">
+    <meta property="og:description" content="How to submit a new device for official builds - PixelExperience Wiki">
+    <meta property="og:site_name" content="How to submit a new device for official builds - PixelExperience Wiki">
+    <meta property="og:image" content="https://download.pixelexperience.org/images/banner.png" />
+    <meta name="keywords" content="wiki,wiki pe,pixel experience,pixel,experience,oreo,google,google pixel,android 10,android q,pie,aosp,ten,android,custom rom,rom">
+    <meta name="msapplication-TileColor" content="#2D2D2D">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2D2D2D">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>How to submit a new device for official builds - PixelExperience Wiki</title>
+
+    <link href="/assets/css/material-kit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:350,400,500,700|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js" integrity="sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-white mb-0 rounded-0">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand font-weight-bold" href="/"><img src="/images/logo.png" alt="PixelExperience"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/devices/" class="nav-link">Devices</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/contributing/" class="nav-link">Contribute</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/developer-information/" class="nav-link">Maintainers</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://download.pixelexperience.org" class="nav-link">
+              <i class="material-icons">open_in_new</i>
+              Website
+            </a>
+          </li>
+        </ul>
+
+        <form class="form-inline ml-auto" autocomplete="off">
+          <div class="form-group no-border">
+            <i class="material-icons">search</i>
+            <input id="search-input" type="text" class="form-control" placeholder="Search">
+          </div>
+
+          <ul id="results-container"></ul>
+
+
+          <script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              SimpleJekyllSearch.init({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('results-container'),
+                  dataSource: '/search.json',
+                  searchResultTemplate: '<li><a href="{url}" title="How to submit a new device for official builds">{title}</a></li>',
+                  noResultsText: '<li><a href="#">No results found.</a></li>',
+                  limit: 10,
+                  fuzzy: true,
+              })
+          </script>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="main-content">
+
+      <div class="container page">
+
+  <h1>How to submit a new device for official builds</h1>
+
+  
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+<h2 id="official-devices">Official devices</h2>
+
+<p>If you have a working device tree/kernel, and would like to submit it for official builds, please check <a href="https://github.com/PixelExperience/official_devices/blob/master/README.md">this url</a> for more instructions. Please note - your device <strong>must</strong> have full hardware support (i.e., every peripheral works) and <strong>must</strong> be stable.</p>
+
+<p>The PixelExperience wiki provides instructions based on the assumption that your device has got its device tree and required depedencies under the <a href="https://github.com/PixelExperience-Devices">PixelExperience-Devices GitHub organization</a>.</p>
+
+<h2 id="setting-up-the-wiki-locally">Setting up the wiki locally</h2>
+
+<p>See <a href="/help/contributing/wiki/">this url</a> for detailed instructions on setting up the wiki locally.</p>
+
+<h2 id="adding-your-device">Adding your device</h2>
+
+<h3 id="prepare-the-required-files">Prepare the required files</h3>
+
+<p>There are a few files which need to be there to have a device on the wiki.
+In order to get them, navigate to <code class="highlighter-rouge">~/wiki/</code> and run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./scripts/generate_device.sh your_device
+</code></pre></div></div>
+
+<p>Obviously replace <code class="highlighter-rouge">your_device</code> with the codename of your device</p>
+
+<h3 id="populating-the-yaml">Populating the YAML</h3>
+
+<p>The sample template has been copied to <code class="highlighter-rouge">~/wiki/_data/devices/your_device.yml</code>.
+Update the values to match your device. An explanation of some of the options is below:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">architecture</code>: The CPU architecture of the device, can be one of</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>arm, arm64, x86, x86_64
+</code></pre></div>    </div>
+
+    <p>If your device has a 64 bit architecture but Android runs on 32 bit, you can use a different format: <code class="highlighter-rouge">{cpu: 'arm64', userspace: 'arm'}</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">battery</code>: Use the format <code class="highlighter-rouge">{removable: False, capacity: &lt;number in mAh&gt;, tech: '&lt;tech&gt;'}</code>. If your battery is removable, use <code class="highlighter-rouge">True</code> instead.
+For <code class="highlighter-rouge">tech</code> you can use:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Li-Ion, Li-Po
+</code></pre></div>    </div>
+
+    <p>In case you are setting up one file for multiple devices which have different batteries, you can use Model-Value-Pairs, e.g.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>battery:
+- Model1: {removable: False, capacity: 1000, tech: 'Li-Ion'}
+- Model2: {removable: True, capacity: 2000, tech: 'Li-Po'}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">bluetooth</code>: The proper format is either <code class="highlighter-rouge">{spec: '&lt;version&gt;'}</code> with <code class="highlighter-rouge">version</code> being the version of the BT protocol supported, or <code class="highlighter-rouge">{spec: '&lt;version&gt;', profiles: '&lt;profiles&gt;'}</code> when your device
+supports additional profiles. These are the possible values:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>For the specification:
+1.0, 1.0B, 1.1, 1.2, 2.0, 2.0 + EDR, 2.1, 2.1 + EDR, 3.0, 3.0 + HS, 4.0, 4.0 + LE, 4.1, 4.2, 5
+
+For the optional profiles:
+A2DP, A2DP + aptX, A2DP + aptX HD
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">cpu</code>: The CPU type of the device, can be one of the following list:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cortex-A15, Cortex-A15 &amp; Cortex-A7, Cortex-A53, Cortex-A53 &amp; Cortex-A53, Cortex-A53 &amp; Cortex-A57, Cortex-A53 &amp; Cortex-A72, Cortex-A57, Cortex-A7, Cortex-A72, Cortex-A73 &amp; Cortex-A53, Cortex-A9, Denver, Exynos M1 &amp; Cortex-A53, Exynos M3 &amp; Cortex-A55, Intel Atom, Krait, Krait 200, Krait 300, Krait 400, Krait 450, Kryo, Kryo 250, Kryo 260, Kryo 280, Kryo 360, Kryo 385, Kryo 460, Kryo 470, Kryo 475, Kryo 485, Kryo 495
+</code></pre></div>    </div>
+  </li>
+  <li><code class="highlighter-rouge">download_boot</code>: Instructions for booting the device into the mode used to install recovery. On most devices, this is fastboot mode.</li>
+  <li><code class="highlighter-rouge">install_method</code>: Used to determine the recovery install template to use. Templates can be found in _includes/templates/recovery_install_<code class="highlighter-rouge">install_method</code>.md.</li>
+  <li><code class="highlighter-rouge">network</code>: The frequencies and channels for the various network technologies. You can look them up <a href="https://www.frequencycheck.com/models/">here</a>. Keep the non-available technologies empty.</li>
+  <li>
+    <p><code class="highlighter-rouge">peripherals</code>: A list of peripherals available on the device, can be any of the following list:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A-GPS, Accelerometer, Audio Coprocessor, Barometer, Color spectrum sensor, Compass, Dual SIM, Dual front speakers, Dual side NFC, Dual-frequency GNSS, Essential Accessories, FM radio, Fingerprint reader, BeiDou, Galileo, GLONASS, GPS, NAVIC, SBAS, QZSS, Gesture sensor, Gyroscope, HDMI, Hall effect sensor, Hardware keyboard, Heart rate sensor, Hygrometer, IR blaster, IR camera, Iceview Cases, Infrared sensor, Light sensor, MHL, MHL 2.0, MHL HDMI, Mobility DisplayPort (MyDP), Motion Coprocessor, Moto Mods, NFC, Pedometer, Proximity sensor, Qi wireless charging, RGB ambient light, SNS integration, Sensor hub, Thermometer, Ultrasound proximity sensor, USB OTG, Wi-Fi Display
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">release</code>: Allowed formats are <code class="highlighter-rouge">yyyy</code>, <code class="highlighter-rouge">yyyy-mm</code> and <code class="highlighter-rouge">yyyy-mm-dd</code>. In case of multiple devices with different dates, you can use Model-Value-Pairs:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>release:
+- Model1: 2015
+- Model2: 2016-01
+- Model3: 2016-02-01
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Additionally there are some optional properties which you might not need, but in case you do, they are documented below:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">carrier</code>: If the device was released for a specific carrier, the name of that carrier. Remove this if not used!</li>
+  <li><code class="highlighter-rouge">custom_twrp_link</code>: A custom twrp recovery link in case no official recovery exists for the specific device or it doesn’t work properly. Remove this if not used!</li>
+  <li><code class="highlighter-rouge">custom_recovery_codename</code>: If an official recovery exists for the device, but it uses a different codename, specify the used one here. Remove this if not used!</li>
+  <li><code class="highlighter-rouge">custom_unlock_cmd</code>: Used if the command to unlock your device via fastboot is different than <code class="highlighter-rouge">fastboot oem unlock</code>. Remove this if not used!</li>
+  <li><code class="highlighter-rouge">format_on_upgrade</code>: Used if the device needs to wiped on major PixelExperience version due to unfixable device specific issues. Remove if not used!</li>
+  <li><code class="highlighter-rouge">is_ab_device</code>: Used if the device has an A/B partition scheme. Remove this if not applicable to your device!</li>
+  <li><code class="highlighter-rouge">is_unlockable</code>: Set to false if there is no official method to unlock the bootloader. A hint will appear on the device’s overview and install page. If this property is not set, it defaults to <code class="highlighter-rouge">True</code></li>
+  <li>
+    <p><code class="highlighter-rouge">required_bootloader</code>: Specify the bootloader versions which are required to install PixelExperience. If no special requirement exists, remove this line! Example:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>required_bootloader: [Version1, Version2]
+</code></pre></div>    </div>
+  </li>
+  <li><code class="highlighter-rouge">uses_twrp</code>: Used if the device doesn’t use PixelExperience Recovery (the default)</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> If you need to assign a value to one of the fields which is not allowed by the time you create your change, update the schema validator or contact us to add it</div></div>
+
+<h2 id="testing-it-works">Testing it works</h2>
+
+<p>Start the wiki on your local Jekyll server, and navigate to <a href="http://localhost:4000/devices.html">the devices list</a>. Your device should be there.
+Click on it, and check that the info/install/build pages all seem correct.</p>
+
+<p>Now run the validation:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+ruby ./test/validate.rb
+</code></pre></div></div>
+
+<p>If the script doesn’t give you an output, all the validated fields have a proper format. Otherwise, read the messages carefully to see which fields have to be corrected.</p>
+
+<h2 id="submitting-wiki-changes">Submitting wiki changes</h2>
+
+<p>After verifying the device-specific pages, commit it and open a pull request at <a href="https://github.com/PixelExperience/wiki/">wiki source code</a> to review proposed changes.</p>
+
+
+</div>
+
+
+    </div>
+
+    <footer class="footer mt-5 px-2 py-4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center text-md-left">
+        <p class="text-muted my-0"><b>&copy; 2018 - 2020 The PixelExperience Project</b></p>
+      </div>
+      <div class="col-md">
+        <p class="text-center text-md-right text-muted">Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.<br />
+         Site last generated: Aug 18, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>anchors.add().remove('h1');</script>
+
+  </body>
+</html>

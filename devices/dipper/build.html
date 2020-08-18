@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="description" content="Build for dipper - PixelExperience Wiki">
+    <meta property="og:title" content="Build for dipper - PixelExperience Wiki">
+    <meta property="og:description" content="Build for dipper - PixelExperience Wiki">
+    <meta property="og:site_name" content="Build for dipper - PixelExperience Wiki">
+    <meta property="og:image" content="https://download.pixelexperience.org/images/banner.png" />
+    <meta name="keywords" content="wiki,wiki pe,pixel experience,pixel,experience,oreo,google,google pixel,android 10,android q,pie,aosp,ten,android,custom rom,rom">
+    <meta name="msapplication-TileColor" content="#2D2D2D">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2D2D2D">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Build for dipper - PixelExperience Wiki</title>
+
+    <link href="/assets/css/material-kit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:350,400,500,700|Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js" integrity="sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-white mb-0 rounded-0">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand font-weight-bold" href="/"><img src="/images/logo.png" alt="PixelExperience"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/devices/" class="nav-link">Devices</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/contributing/" class="nav-link">Contribute</a>
+          </li>
+          <li class="nav-item">
+            <a href="/help/developer-information/" class="nav-link">Maintainers</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://download.pixelexperience.org" class="nav-link">
+              <i class="material-icons">open_in_new</i>
+              Website
+            </a>
+          </li>
+        </ul>
+
+        <form class="form-inline ml-auto" autocomplete="off">
+          <div class="form-group no-border">
+            <i class="material-icons">search</i>
+            <input id="search-input" type="text" class="form-control" placeholder="Search">
+          </div>
+
+          <ul id="results-container"></ul>
+
+
+          <script src="/assets/js/jekyll-search.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              SimpleJekyllSearch.init({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('results-container'),
+                  dataSource: '/search.json',
+                  searchResultTemplate: '<li><a href="{url}" title="Build for dipper">{title}</a></li>',
+                  noResultsText: '<li><a href="#">No results found.</a></li>',
+                  limit: 10,
+                  fuzzy: true,
+              })
+          </script>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="main-content">
+
+      <div class="container page">
+
+  <h1>Build for dipper</h1>
+
+  
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+<div class="alert alert-info" role="alert">
+  <div class="alert-icon">
+    <i class="material-icons">info_outline</i>
+  </div>
+  <div class="alert-text">
+    <b>Note:</b> This page is auto-generated for the Xiaomi Mi 8, based on the device’s information, located
+    <a href="https://github.com/PixelExperience/wiki/blob/master/_data/devices/dipper.yml">here</a>. You can find similar
+    instructions for every officially-supported device on this wiki.
+  </div>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>These instructions will hopefully assist you to start with a stock Xiaomi Mi 8, unlock the bootloader (if necessary), and then download
+the required tools as well as the very latest source code for PixelExperience (based on Google’s Android operating system) for your device. Using these, you can build both
+a PixelExperience installation zip and a PixelExperience Recovery image and install them on your device.</p>
+
+<p>It is difficult to say how much experience is necessary to follow these instructions. While this guide is certainly not for the extremely uninitiated,
+these steps shouldn’t require a PhD in software development either. Some readers will have no difficulty and breeze through the steps easily.
+Others may struggle over the most basic operation. Because people’s experiences, backgrounds, and intuitions differ, it may be a good idea to read through
+just to ascertain whether you feel comfortable or are getting over your head.</p>
+
+<p>Remember, you assume all risk of trying this, but you will reap the rewards! It’s pretty satisfying to boot into a fresh operating system you baked at home :).
+And once you’re an Android-building ninja, there will be no more need to wait for “nightly” builds from anyone. You will have at your fingertips the skills to
+build a full operating system from code and install it to a running device, whenever you want. Where you go from there– maybe you’ll add a feature, fix a bug, add a translation,
+or use what you’ve learned to build a new app or port to a new device– or maybe you’ll never build again– it’s all really up to you.</p>
+
+<h3 id="what-youll-need">What you’ll need</h3>
+
+<ul>
+  <li>A Xiaomi Mi 8.</li>
+  <li>A relatively recent 64-bit computer (Linux, macOS, or Windows) with a reasonable amount of RAM and about 100 GB of free storage (more if you enable <code class="highlighter-rouge">ccache</code>
+ or build for multiple devices). The less RAM you have, the longer the build will take (aim for 8 GB or more). Using SSDs results in considerably faster
+ build times than traditional hard drives.</li>
+  <li>A USB cable compatible with the Xiaomi Mi 8.</li>
+  <li>A decent internet connection and reliable electricity. :)</li>
+  <li>Some familiarity with basic Android operation and terminology. It would help if you’ve installed custom roms on other devices and are familiar with recovery.
+ It may also be useful to know some basic command line concepts such as <code class="highlighter-rouge">cd</code>, which stands for “change directory”, the concept of directory hierarchies, and that in Linux they are separated by /, etc.</li>
+</ul>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> If you are not accustomed to using Linux, this is an excellent chance to learn. It’s free – just download and run a virtual machine (VM) such as
+<a href="https://www.virtualbox.org">VirtualBox</a>, then install a Linux distribution such as <a href="https://www.ubuntu.com">Ubuntu</a> (<a href="https://source.android.com/source/initializing.html">AOSP vets Ubuntu as well</a>).
+Any recent 64-bit version should work great, but the latest Long Term Support (LTS) version is recommended. There are plenty of instructions on setting up VirtualBox to run Ubuntu, so we’ll leave that to you.</div></div>
+
+<p>Let’s begin!</p>
+
+<h2 id="build-pixelexperience-and-pixelexperience-recovery">Build PixelExperience and PixelExperience Recovery</h2>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> You only need to do these steps once. If you have already prepared your build environment and downloaded the source code,
+skip to <a href="#prepare-the-device-specific-code">Prepare the device-specific code</a></div></div>
+
+<h3 id="install-the-platform-tools">Install the platform-tools</h3>
+
+<p>If you haven’t previously installed <code class="highlighter-rouge">adb</code> and <code class="highlighter-rouge">fastboot</code>, you can <a href="https://dl.google.com/android/repository/platform-tools-latest-linux.zip">download them from Google</a>.
+Extract it running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip platform-tools-latest-linux.zip -d ~
+</code></pre></div></div>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> The file may not be named identically to what stands in this command, so adjust accordingly.</div></div>
+
+<p>Now you have to add <code class="highlighter-rouge">adb</code> and <code class="highlighter-rouge">fastboot</code> to your PATH. Open <code class="highlighter-rouge">~/.profile</code> and add the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># add Android SDK platform tools to path
+if [ -d "$HOME/platform-tools" ] ; then
+    PATH="$HOME/platform-tools:$PATH"
+fi
+</code></pre></div></div>
+
+<p>Then, run <code class="highlighter-rouge">source ~/.profile</code> to update your environment.</p>
+
+<h3 id="install-the-build-packages">Install the build packages</h3>
+
+<p>Several packages are needed to build PixelExperience. You can install these using your distribution’s package manager.</p>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> A <a href="https://en.wikipedia.org/wiki/Package_manager">package manager</a> in Linux is a system used to install or remove software
+(usually originating from the Internet) on your computer. With Ubuntu, you can use the Ubuntu Software Center. Even better, you may also use the <code class="highlighter-rouge">apt-get install</code>
+command directly in the Terminal.</div></div>
+<p>To build PixelExperience, you’ll need:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick
+ lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev
+ libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync
+ schedtool squashfs-tools xsltproc 
+ zip zlib1g-dev</code></li>
+</ul>
+
+<p>For Ubuntu versions older than 20.04 (focal), install also:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">libwxgtk3.0-dev</code></li>
+</ul>
+
+<p>While for Ubuntu versions older than 16.04 (xenial), install:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">libwxgtk2.8-dev</code></li>
+</ul>
+
+<h4 id="java">Java</h4>
+
+<p>Different versions of PixelExperience require different JDK (Java Development Kit) versions.</p>
+
+<ul>
+  <li>PixelExperience Pie-Ten: OpenJDK 1.9 (included by default)</li>
+</ul>
+
+<h3 id="create-the-directories">Create the directories</h3>
+
+<p>You’ll need to set up some directories in your build environment.</p>
+
+<p>To create them:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/bin
+mkdir -p ~/android/pe
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">~/bin</code> directory will contain the git-repo tool (commonly named “repo”) and the <code class="highlighter-rouge">~/android/pe</code> directory will contain the source code of PixelExperience.</p>
+
+<h3 id="install-the-repo-command">Install the <code class="highlighter-rouge">repo</code> command</h3>
+
+<p>Enter the following to download the <code class="highlighter-rouge">repo</code> binary and make it executable (runnable):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo
+chmod a+x ~/bin/repo
+</code></pre></div></div>
+
+<h3 id="put-the-bin-directory-in-your-path-of-execution">Put the <code class="highlighter-rouge">~/bin</code> directory in your path of execution</h3>
+
+<p>In recent versions of Ubuntu, <code class="highlighter-rouge">~/bin</code> should already be in your PATH. You can check this by opening <code class="highlighter-rouge">~/.profile</code> with a text editor and verifying the following code exists (add it if it is missing):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+</code></pre></div></div>
+
+<p>Then, run <code class="highlighter-rouge">source ~/.profile</code> to update your environment.</p>
+
+<h3 id="configure-git">Configure git</h3>
+<p>Given that <code class="highlighter-rouge">repo</code> requires you to identify yourself to sync Android, run the following commands to configure your <code class="highlighter-rouge">git</code> identity:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code></pre></div></div>
+
+<h3 id="initialize-the-pixelexperience-source-repository">Initialize the PixelExperience source repository</h3>
+
+<p>The following branches can be used to build for the Xiaomi Mi 8:</p>
+
+<ul>
+  <li>
+    <p>ten</p>
+  </li>
+  <li>
+    <p>ten-plus</p>
+  </li>
+</ul>
+
+<p>Enter the following to initialize the repository:</p>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> Make sure the branch you enter here is the one you wish to build!</div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/android/pe
+repo init -u https://github.com/PixelExperience/manifest -b branch_name
+</code></pre></div></div>
+
+<h3 id="download-the-source-code">Download the source code</h3>
+
+<p>To start the download of the source code to your computer, type the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repo sync -j$(nproc --all) -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> This may take a while, depending on your internet speed. Go and have a beer/coffee/tea/nap in the meantime!</div></div>
+
+<div class="alert alert-success" role="alert"><div class="alert-icon"><i class="material-icons">check</i></div><div class="alert-text"><b>Tip:</b> The <code class="highlighter-rouge">repo sync</code> command is used to update the latest source code from PixelExperience. Remember it, as you may want to
+do it every few days to keep your code base fresh and up-to-date.</div></div>
+
+<h3 id="prepare-the-device-specific-code">Prepare the device-specific code</h3>
+
+<p>After the source downloads, ensure you’re in the root of the source code (<code class="highlighter-rouge">cd ~/android/pe</code>), then type:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source build/envsetup.sh
+lunch dipper-userdebug
+</code></pre></div></div>
+
+<p>This will download your device’s necessary dependencies.</p>
+
+<h3 id="turn-on-caching-to-speed-up-build">Turn on caching to speed up build</h3>
+
+<p>Make use of <a href="https://ccache.samba.org/"><code class="highlighter-rouge">ccache</code></a> if you want to speed up subsequent builds by running:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+</code></pre></div></div>
+
+<p>and adding that line to your <code class="highlighter-rouge">~/.bashrc</code> file. Then, specify the maximum amount of disk space you want <code class="highlighter-rouge">ccache</code> to use by typing this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ccache -M 50G
+</code></pre></div></div>
+
+<p>where <code class="highlighter-rouge">50G</code> corresponds to 50GB of cache. This needs to be run once. Anywhere from 25GB-100GB will result in very noticeably increased build speeds
+(for instance, a typical 1hr build time can be reduced to 20min). If you’re only building for one device, 25GB-50GB is fine. If you plan to build
+for several devices that do not share the same kernel source, aim for 75GB-100GB. This space will be permanently occupied on your drive, so take this
+into consideration.</p>
+
+<p>You can also enable the optional <code class="highlighter-rouge">ccache</code> compression. While this may involve a slight performance slowdown, it increases the number of files that fit in the cache. To enable it, run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CCACHE_COMPRESS=1
+</code></pre></div></div>
+
+<p>or add that line to your <code class="highlighter-rouge">~/.bashrc</code> file.</p>
+
+<div class="alert alert-info" role="alert"><div class="alert-icon"><i class="material-icons">info_outline</i></div><div class="alert-text"><b>Note:</b> If compression is enabled, the <code class="highlighter-rouge">ccache</code> size can be lower (aim for approximately 20GB for one device).</div></div>
+
+<h3 id="start-the-build">Start the build</h3>
+
+<p>Time to start building! Now, type:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>croot
+mka bacon -j$(nproc --all)
+</code></pre></div></div>
+
+<p>The build should begin.</p>
+
+<h2 id="install-the-build">Install the build</h2>
+
+<p>Assuming the build completed without errors (it will be obvious when it finishes), type the following in the terminal window the build ran in:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd $OUT
+</code></pre></div></div>
+
+<p>There you’ll find all the files that were created. The two files of more interest are:</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">recovery.img</code>, which is the PixelExperience recovery image.</p>
+  </li>
+  <li>
+    <p>A zip file whose name starts with ‘PixelExperience_’, which is the PixelExperience
+installer package.</p>
+  </li>
+</ol>
+
+<h3 id="success-so-whats-next">Success! So… what’s next?</h3>
+
+<p>You’ve done it! Welcome to the elite club of self-builders. You’ve built your operating system from scratch, from the ground up. You are the master/mistress of your domain… and
+hopefully you’ve learned a bit on the way and had some fun too.</p>
+
+<h2 id="to-get-assistance">To get assistance</h2>
+
+<ul>
+  <li><a href="https://t.me/pixelexperiencechat">Telegram group</a></li>
+</ul>
+
+
+
+</div>
+
+
+    </div>
+
+    <footer class="footer mt-5 px-2 py-4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-center text-md-left">
+        <p class="text-muted my-0"><b>&copy; 2018 - 2020 The PixelExperience Project</b></p>
+      </div>
+      <div class="col-md">
+        <p class="text-center text-md-right text-muted">Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.<br />
+         Site last generated: Aug 18, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>anchors.add().remove('h1');</script>
+
+  </body>
+</html>
